@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter Cafe | Fresh coffee, warm vibes</title>
+    <meta
+      name="description"
+      content="Starter Cafe is a modern cafe in downtown Portland serving specialty coffee, homemade pastries, and warm hospitality."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+
+    <header class="site-header">
+      <a href="#home" class="brand" aria-label="Starter Cafe home">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>Starter Cafe</strong>
+          <small>Fresh coffee, warm vibes</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#booking">Book</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Downtown Portland • Open daily</p>
+          <h1>Specialty coffee with a neon glow.</h1>
+          <p class="hero-copy">
+            Start your morning with expertly poured espresso, buttery pastries,
+            and an atmosphere that feels both bold and comforting.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            <a href="#booking" class="btn btn-secondary">Reserve a Table</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>House-roasted beans</li>
+            <li>Fresh pastry lineup</li>
+            <li>Late-night espresso</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Starter Cafe</p>
+          <h2>A modern cafe rooted in comfort and craft.</h2>
+          <p>
+            We are a neighborhood favorite in downtown Portland, blending the energy of a contemporary coffee bar with the warmth of a community gathering place.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="card reveal">
+            <h3>Crafted daily</h3>
+            <p>
+              Our baristas prepare each drink with care, from silky flat whites to bright pour-overs.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Made with local love</h3>
+            <p>
+              We partner with nearby bakers and roasters for ingredients that feel personal and seasonal.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Designed for lingering</h3>
+            <p>
+              Low lighting, mellow playlists, and cozy corners keep the mood grounded and inviting.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section menu" id="menu">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Signature Menu</p>
+          <h2>Fresh favorites for every kind of morning.</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coffee1/700/500" alt="Coffee and pastry pairing" />
+            <div class="menu-card-content">
+              <h3>Midnight Bloom Latte</h3>
+              <p>Espresso, vanilla bean cream, and a soft citrus finish.</p>
+              <span>$6.50</span>
+            </div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/coffee2/700/500" alt="Latte art on a cappuccino" />
+            <div class="menu-card-content">
+              <h3>Harbor Cappuccino</h3>
+              <p>Velvety milk foam, dark roast espresso, and cocoa nib dusting.</p>
+              <span>$5.80</span>
+            </div>
+          </article>
+          <article class="menu-card reveal">
+            <img src="https://picsum.photos/seed/pastry1/700/500" alt="Fresh pastry on a plate" />
+            <div class="menu-card-content">
+              <h3>Maple Morning Bun</h3>
+              <p>Warm laminated dough with house-made maple glaze and sea salt.</p>
+              <span>$4.90</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Membership & Pricing</p>
+          <h2>Choose the pace that fits your routine.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <h3>Daily Pass</h3>
+            <p class="price">$12</p>
+            <ul>
+              <li>One handcrafted drink</li>
+              <li>Weekly pastry special</li>
+              <li>Wi-Fi access</li>
+            </ul>
+            <a href="#booking" class="btn btn-secondary">Reserve</a>
+          </article>
+          <article class="pricing-card featured reveal">
+            <h3>Studio Membership</h3>
+            <p class="price">$29<span>/month</span></p>
+            <ul>
+              <li>Unlimited drip coffee</li>
+              <li>Member-only pastry drops</li>
+              <li>Priority seating</li>
+            </ul>
+            <a href="#booking" class="btn btn-primary">Join Now</a>
+          </article>
+          <article class="pricing-card reveal">
+            <h3>Private Event</h3>
+            <p class="price">From $180</p>
+            <ul>
+              <li>Up to 20 guests</li>
+              <li>Custom coffee service</li>
+              <li>Dedicated host support</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Plan Event</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking">
+        <div class="booking-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Book a Table</p>
+            <h2>Reserve your corner of the cafe.</h2>
+            <p>
+              Whether you’re meeting a friend or settling in for work, we’ll prepare a spot that feels just right.
+            </p>
+          </div>
+
+          <form class="booking-form reveal" id="booking-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Time
+              <input type="time" name="time" required />
+            </label>
+            <label>
+              Notes
+              <textarea name="notes" rows="4" placeholder="Tell us about your visit."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Request Reservation</button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Frequently Asked Questions</p>
+          <h2>Everything you need to know before you stop by.</h2>
+        </div>
+        <div class="faq-list reveal">
+          <article class="faq-item active">
+            <button class="faq-question" type="button" aria-expanded="true">
+              Do you offer vegan pastries?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We rotate several plant-based pastries each week, including almond croissants and oat-based scones.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Is there Wi-Fi for remote work?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. Our cafe offers fast Wi-Fi and plenty of outlets for laptop work and meetings.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              Can I host a private event here?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We host intimate gatherings and evening events. Reach out with your date and guest count to start planning.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-info">
+            <p class="eyebrow">Visit Us</p>
+            <h2>We’d love to welcome you in.</h2>
+            <p>214 Pine Street, Portland, OR 97204</p>
+            <p>hello@startercafe.com</p>
+            <p>(503) 555-0148</p>
+            <div class="social-links" aria-label="Social media links">
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://x.com" target="_blank" rel="noreferrer">X</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+            </div>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Starter Cafe location map"
+              src="https://www.google.com/maps?q=Portland%20OR&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Starter Cafe. Crafted for warm mornings and bright evenings.</p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
